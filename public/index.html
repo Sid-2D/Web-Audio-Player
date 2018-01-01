@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="vendors/css/grid.css">
+        <link rel="stylesheet" href="vendors/css/normalize.css">
+        <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" href="resources/css/animations.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/queries.css">
+        <title>Music</title>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <h1>WEB AUDIO</h1>
+            </div>
+            
+            <div class="row">
+                <div class="api-icons">
+                    load:
+                    <i class="ion-upload"></i>
+                </div>
+            </div>
+        </header>
+        <section class="tabs">
+            <div class="row">
+                <ul>
+                    <li><a>Files</a></li>
+                    <li><a>Player</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="search-list">
+            <div class="card">
+                <div class="card-header">You were right</div>
+                <div class="card-control"><a><i class="ion-play"></i></a></div>
+                <div class="card-control"><a><i class="ion-android-download"></i></a></div>
+                <div class="card-load clearfix"><a><i class="ion-android-refresh"></i></a></div>
+            </div>
+            <div class="card">
+                <div class="card-header">Innerbloom</div>
+                <div class="card-control"><a><i class="ion-play"></i></a></div>
+                <div class="card-control"><a><i class="ion-android-download"></i></a></div>
+                <div class="card-load clearfix"><a><i class="ion-android-refresh"></i></a></div>
+            </div>
+        </section>
+        <section class="player-list">
+            <div class="card">
+                <div class="card-header">Like an Animal</div>
+                <div class="player">
+                    <audio controls>
+                        <source src="">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>    
+                <div class="panel"><i class="ion-chevron-down"></i></div>
+            </div>
+        </section>
+        
+        <!-- Templates -->
+<!--
+                <h3>{%=o.title%}</h3>
+                <p>Released under the
+                <a href="{%=o.license.url%}">{%=o.license.name%}</a>.</p>
+                <h4>Features</h4>
+                <ul>
+                {% for (var i=0; i<o.features.length; i++) { %}
+                    <li>{%=o.features[i]%}</li>
+                {% } %}
+                </ul>
+                <div class="card" id="{%=o.id%}">
+                </div>                
+-->
+        <script type="text/x-tmpl" id="card-search">
+                
+            <div class="card-header">{%=o.title%}</div>
+            <div class="card-control"><a><i class="ion-play"></i></a></div>
+            <div class="card-control"><a><i class="ion-android-download"></i></a></div>
+            <div class="card-load clearfix"><a><i class="ion-android-refresh"></i></a></div>
+
+        </script>
+        
+        <script type="text/x-tmpl" id="card-player">
+            <div class="card-header">{%=o.title%}</div>
+            <div class="player">
+                <audio controls>
+                    <source src="{%=o.id%}">
+                </audio>
+            </div>    
+            <div class="panel"><i class="ion-chevron-down"></i></div>
+        </script>
+        
+        <!-- JS files -->
+    </body>
+</html>

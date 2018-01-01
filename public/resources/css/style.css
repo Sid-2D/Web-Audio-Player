@@ -1,0 +1,241 @@
+/* ---------------- */
+/* BASIC SETUP */
+/* ---------------- */
+
+/* CLOUDS - #ecf0f1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #34495e;
+}
+
+html {
+    color: #fff;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ---------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px 0;
+}
+
+
+/* ---------------- */
+/* HEADER */
+/* ---------------- */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: #ecf0f1;
+    border-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), #666;
+    padding-bottom: 10px;
+/*
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 4vw)
+      );
+*/
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+}
+
+.search-bar {
+    text-align: center;
+    margin-left: 10%;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    width: 75%;
+    border: none;
+    height: 30;
+    padding-left: 10;
+    outline-style: none;
+}
+
+.btn {
+    outline-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #e8e8e8;
+    border: 2px solid rgb(130, 142, 142);
+    position: relative;
+    left: -6%;
+    transition: all 0.2s;
+    font-size: 90%;
+    cursor: pointer;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: azure;
+}
+
+.api-icons {
+    font-size: 100%;
+    font-weight: 300;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.ion-upload {
+    border-radius: 5px;
+    padding: 0 1.5%;
+    transition: background 0.2s;
+}
+
+.ion-upload:hover {
+    background: #16a085;
+}
+
+/* ---------------- */
+/* TABS */
+/* ---------------- */
+
+.tabs ul {
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 85%;
+    padding-bottom: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+}
+
+.tabs ul li {
+    background: #3b3b3b;
+    float: left;
+    padding: 2% 3%;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tabs li a {
+    display: block;
+} 
+
+.tabs ul li:first-child {
+    background: #ecf0f1;
+    color: rgb(59, 59, 59);
+}
+
+/* ---------------- */
+/* CARDS */
+/* ---------------- */
+
+.card {
+    background: #ecf0f1;
+    color: #000;
+    margin: 0 2% 3% 2%;
+    padding: 2% 3%;
+    text-align: left;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.card-header {
+    text-align: left;
+    overflow-wrap: break-word; 
+    font-size: 90%;
+}
+
+.card-control {
+    display: inline-block;
+    font-size: 110%;
+    margin-right: 7%;
+/*    color: #16a085;*/
+}
+
+.card-load {
+    display: inline-block;
+    font-size: 110%;
+    float: right;
+    display: none;
+    animation: rotation 2s infinite linear;
+}
+
+.card-load .ion-android-refresh {
+    transition: display 0.3s;
+}
+
+.card-load:hover {
+    opacity: 0;
+}
+
+/* ---------------- */
+/* SEARCH REGION */
+/* ---------------- */
+
+.search-list {
+    padding-top: 0;
+}
+
+
+/* ---------------- */
+/* PLAYER */
+/* ---------------- */
+
+.player-list {
+    display: none;
+    padding-top: 0;
+}
+
+.player-list .card {
+    padding-bottom: 0;
+}
+
+.player {
+    margin: 2% 0;
+}
+
+.panel {
+    text-align: center;
+    padding-bottom: 0px;
+}
