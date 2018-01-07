@@ -82,18 +82,27 @@
         </script>
         
         <script type="text/x-tmpl" id="card-player">
-            <div class="card-header">{%=o.title%}</div>
+            <div class="card-header">{%=o.title%}<span class="card-reload clearfix"><i class="ion-android-refresh"></i></span></div>
             <div class="player">
-                <audio controls>
-                    <source src="{%=o.id%}">
-                </audio>
-            </div>    
+                <div class="controls">
+                    <button id="audioControl{%=o.id%}">Play</button>
+                </div>
+                <div class="panel-content">
+                    Hello<br>
+                    <panel class="panel-inner">
+                        Line<br>
+                        Line<br>
+                        Line<br>
+                    </panel>
+                </div>
+            </div>
             <div class="panel"><i class="ion-chevron-down"></i></div>
         </script>
         
         <!-- JS files -->
         <script type="text/javascript" src="resources/js/tmpl.min.js"></script>
         <script type="text/javascript" src="resources/js/templates.js"></script>
+        <script type="text/javascript" src="resources/js/audio-controller.js"></script>
         <script type="text/javascript" src="resources/js/ui-service.js"></script>
         <script type="text/javascript" src="resources/js/ui-controller.js"></script>
         <script type="text/javascript" src="resources/js/animation-controller.js"></script>
