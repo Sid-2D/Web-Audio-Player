@@ -1,6 +1,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#282f31">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
         <link rel="stylesheet" href="vendors/css/grid.css">
         <link rel="stylesheet" href="vendors/css/normalize.css">
@@ -53,6 +55,22 @@
                         <source src="">
                         Your browser does not support the audio element.
                     </audio>
+                </div>    
+                <div class="panel"><i class="ion-chevron-down"></i></div>
+            </div>
+            <div class="card">
+                <div class="card-header">Like an Animal</div>
+                <div class="player">
+                    <audio id="sampleaAudio" preload="true">
+                        <source src="sample.mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="controls">
+                        <i class="ion-play"></i>
+                        <div class="timeline">
+                            <input type="range" min="1" max="300" value="50" class="slider" id="myRange">
+                        </div>
+                    </div>
                 </div>    
                 <div class="panel"><i class="ion-chevron-down"></i></div>
             </div>
