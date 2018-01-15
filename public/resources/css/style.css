@@ -240,7 +240,7 @@ input[type="text"] {
     padding-bottom: 0px;
 }
 
-.ion-play {
+.ion-play, .ion-pause {
     margin-right: 5px;
     font-size: 140%;
     float: left;
