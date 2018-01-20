@@ -29,3 +29,12 @@
     background: #ecf0f1;
     color: rgb(59, 59, 59);
 }
+
+/* ---------------- */
+/* PLAYER */
+/* ---------------- */
+
+.player-list {
+    display: none;
+    padding-top: 0;
+}

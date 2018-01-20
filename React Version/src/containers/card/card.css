@@ -1,0 +1,47 @@
+/* ---------------- */
+/* CARDS */
+/* ---------------- */
+
+.card {
+    background: #ecf0f1;
+    color: #000;
+    margin: 0 2% 3% 2%;
+    padding: 2% 3%;
+    text-align: left;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.card-header {
+    text-align: left;
+    overflow-wrap: break-word; 
+    font-size: 90%;
+}
+
+.card-control {
+    display: inline-block;
+    font-size: 140%;
+    margin-right: 7%;
+    color: #323B3E;
+/*    color: #16a085;*/
+}
+
+.card-reload {
+    float: right;
+}
+
+.card-load {
+    display: inline-block;
+    font-size: 110%;
+    float: right;
+    display: none;
+    animation: rotation 2s infinite linear;
+}
+
+.card-load .ion-android-refresh {
+    transition: display 0.3s;
+}
+
+.card-load:hover {
+    opacity: 0;
+}
