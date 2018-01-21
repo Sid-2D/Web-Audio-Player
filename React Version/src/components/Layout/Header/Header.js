@@ -3,12 +3,12 @@ import './Header.css'
 import Search from './Search/Search'
 import Api from './Api/Api'
 
-const Header = () => (
+const Header = props => (
     <header>
         <div className="row">
-            <h1>PLAYER</h1>
+            <h1>Player</h1>
         </div>
-        <Search />
+        <Search searchText={props.searchText} />
         <Api />
     </header>
 )

@@ -1,15 +1,26 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Header from './Header/Header'
-import Tabs from '../Tabs/Tabs'
+import Tabs from '../../containers/Tabs/Tabs'
 
-const layout = () => {
-    let tabs = ['Search', 'Player']
-    return (
-        <div>
-            <Header />
-            <Tabs names={tabs} />
-        </div>
-    )
+class layout extends Component {
+    state = {
+        tabs: ['Search', 'Related', 'Player'],
+        search: ''
+    }
+
+    searchText = text => {
+        this.setState({search: text})
+    }
+    
+    render() {
+        console.log('here', this.state.search)
+        return (
+            <div>
+                <Header searchText={this.searchText} />
+                <Tabs names={this.state.tabs} />
+            </div>
+        )
+    }
 }
 
 export default layout

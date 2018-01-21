@@ -6,7 +6,7 @@
     background: #ecf0f1;
     color: #000;
     margin: 0 2% 3% 2%;
-    padding: 2% 3%;
+    padding: 2% 3% 0 3%;
     text-align: left;
     font-weight: 400;
     border-radius: 5px;
@@ -44,4 +44,17 @@
 
 .card-load:hover {
     opacity: 0;
+}
+
+.panel {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.panel-content {
+    font-weight: 300;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
 }

@@ -25,9 +25,17 @@
     display: block;
 } 
 
-.tabs ul li:first-child {
-    background: #ecf0f1;
-    color: rgb(59, 59, 59);
+.search-list {
+    padding-top: 0;
+}
+
+/* ---------------- */
+/* RELATED */
+/* ---------------- */
+
+.related-list {
+    display: none;
+    padding-top: 0;
 }
 
 /* ---------------- */
