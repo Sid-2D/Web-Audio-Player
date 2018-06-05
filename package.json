@@ -1,0 +1,25 @@
+{
+  "name": "Web-Audio-Player",
+  "version": "1.0.0",
+  "description": "Using Web Audio API to make a simple web based music player. Currently in early development.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid-2D/Web-Audio-Player.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sid-2D/Web-Audio-Player/issues"
+  },
+  "homepage": "https://github.com/Sid-2D/Web-Audio-Player#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  }
+}

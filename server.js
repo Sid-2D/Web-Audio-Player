@@ -10,14 +10,14 @@ express.static(__dirname)
 
 app.use(bodyParser.json());
 
-app.use('/resources', express.static(path.join('Front-End', '/resources')))
+app.use('/resources', express.static(path.join('public', '/resources')))
 
-app.use('/vendors', express.static(path.join('Front-End', '/vendors')))
+app.use('/vendors', express.static(path.join('public', '/vendors')))
 
 app.use('/', express.static(path.join('./', '/Music')))
 
 app.get('/', (req, res) => {
-	res.sendFile(__dirname + '/Front-End/index.html')
+	res.sendFile(__dirname + '/public/index.html')
 })
 
 app.listen(process.env.PORT || 3006, err => {
