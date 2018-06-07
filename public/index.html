@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="resources/css/animations.css">
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/queries.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelementplayer.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.min.js"></script>
         <title>Music</title>
     </head>
     <body>
@@ -119,7 +122,15 @@
             </div>
             <div class="panel"><i class="ion-chevron-down"></i></div>
         </script>
-        
+        <script>
+            var player = new MediaElementPlayer('player', {
+                success: (mediaElement, originalNode, instance) => {
+                    console.log(mediaElement)
+                    console.log(originalNode)
+                    console.log(instance)
+                }
+            });
+        </script>
         <!-- JS files -->
         <script type="text/javascript" src="resources/js/tmpl.min.js"></script>
         <script type="text/javascript" src="resources/js/templates.js"></script>
