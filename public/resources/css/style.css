@@ -11,12 +11,12 @@
 }
 
 body {
-    background: #34495e;
+    background: #201f1d;
 }
 
 html {
     color: #fff;
-    font-family: 'Ubuntu', 'Arial', sans-serif;
+    font-family: monospace;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
@@ -68,7 +68,7 @@ h1 {
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), #666;
+    background: #323232;
     padding-bottom: 10px;
 /*
     clip-path: polygon(
@@ -171,7 +171,7 @@ input[type="text"] {
 /* ---------------- */
 
 .card {
-    background: #ecf0f1;
+    background: #f1f1f1;
     color: #000;
     margin: 0 2% 3% 2%;
     padding: 2% 3%;
@@ -184,6 +184,7 @@ input[type="text"] {
     text-align: left;
     overflow-wrap: break-word; 
     font-size: 90%;
+    margin-bottom: 7px;
 }
 
 .card-control {
