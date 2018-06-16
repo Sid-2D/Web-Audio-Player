@@ -1,8 +1,7 @@
 let uiService = (() => {
     
     let tabRegions = {
-        0: document.querySelector('.search-list'),
-        1: document.querySelector('.player-list')
+        0: document.querySelector('.player-list')
     }
     
     let colors = {
