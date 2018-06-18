@@ -44,7 +44,14 @@
                         Your browser does not support the audio element.
                     </audio>
                 </div>    
-                <div class="panel"><i class="ion-chevron-down"></i></div>
+                <div class="panel">
+                    <div class="panel-content">
+                        <br>
+                        Hello
+                    </div>
+                    <i class="ion-chevron-down" onclick="var ele = document.querySelector('.panel-content')
+                        ele.style.maxHeight = ele.scrollHeight + 'px'"></i>
+                </div>
             </div>
             <div class="card">
                 <div class="card-header">Like an Animal</div>
