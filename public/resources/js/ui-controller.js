@@ -1,5 +1,5 @@
 let UIController = ((uiService, templates) => {
-    
+
     return {
         
         initUI: () => {
@@ -14,4 +14,5 @@ let UIController = ((uiService, templates) => {
         }
 
     }
+    
 })(uiService, templates)

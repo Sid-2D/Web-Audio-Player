@@ -19,30 +19,16 @@ let uiService = (() => {
         tabRegions[index].style.display = 'block'
         tabs[index].style.background = colors.light
         tabs[index].style.color = colors.dark
-        
     }
     
-    function downloadAndPlay(id) {
-        
-    }
-    
-    function changeIconPlay(player, loop) {
-        if (player.pause) {
-            // Add loop
-            loop.style.display = 'inline-block'
-            
-            // Send download request
-            setTimeout(() => {
-                loop.style.display = 'none'
-                player.innerHTML = '<a><i class="ion-pause"></i></a>'
-                player.pause = false
-            }, 1000)
+    function collapse(panel) {
+        if (panel.style.maxHeight === "" || panel.style.maxHeight === "0px") {
+            panel.style.maxHeight = ele.scrollHeight + 'px'
             return
         }
-        player.innerHTML = '<a><i class="ion-play"></i></a>'
-        player.pause = true
+        panel.style.maxHeight = 0 + 'px'
     }
-    
+
     return {
         
         enableTabs: () => {
@@ -52,9 +38,10 @@ let uiService = (() => {
             })
         },
         
-        addCardControls: (player, downloader, loop) => {
-            player.pause = true
-            player.addEventListener('click', changeIconPlay.bind(null, player, loop))
+        addCardControls: (card) => {
+            chevron = card.querySelector('i')
+            panel = card.querySelector('.panel-content')
+            chevron.addEventListener('click', collapse.bind(panel))
         }
         
     }

@@ -2,7 +2,6 @@ let app = ((uiCtrl) => {
     
     function setEventListeners() {
         uiCtrl.initUI()
-        
     }
     
     return {
