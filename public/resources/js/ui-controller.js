@@ -4,7 +4,7 @@ let UIController = ((uiService, templates) => {
         
         initUI: () => {
             uiService.enableTabs()
-            
+            uiService.enableUploads()
         },
         
         updateNode: (node, attributes, updates) => {

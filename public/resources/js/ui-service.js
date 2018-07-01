@@ -42,8 +42,15 @@ let uiService = (() => {
             chevron = card.querySelector('i')
             panel = card.querySelector('.panel-content')
             chevron.addEventListener('click', collapse.bind(panel))
-        }
+        },
         
+        enableUploads: () => {
+            let uploader = document.querySelector('#uploader')
+
+            uploader.onclick = () => {
+                console.log('Uploader clicked')
+            }
+        }
     }
     
 })()
