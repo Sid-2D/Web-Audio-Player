@@ -48,7 +48,7 @@ let uiService = (() => {
             let uploader = document.querySelector('#uploader')
 
             uploader.onclick = () => {
-                console.log('Uploader clicked')
+                document.getElementById('upload-file').click()
             }
         }
     }
