@@ -46,7 +46,10 @@ let uiService = (() => {
         
         enableUploads: () => {
             let uploader = document.querySelector('#uploader')
-
+            document.getElementById('upload-file').addEventListener('change', evt => {
+                console.log(evt.target.files)
+                // Add new card here
+            })
             uploader.onclick = () => {
                 document.getElementById('upload-file').click()
             }
