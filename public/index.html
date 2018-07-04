@@ -79,21 +79,20 @@
         </script>
         
         <script type="text/x-tmpl" id="card-player">
-            <div class="card-header">{%=o.title%}<span class="card-reload clearfix"><i class="ion-android-refresh"></i></span></div>
-            <div class="player">
-                <div class="controls">
-                    <button id="audioControl{%=o.id%}">Play</button>
-                </div>
+            <div class="card-header">{%=o.title%}</div>
+            <div>
+                <audio id="audio-{%=o.id%}" preload="none" controls>
+                    <source src="">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>    
+            <div class="panel">
                 <div class="panel-content">
-                    Hello<br>
-                    <panel class="panel-inner">
-                        Line<br>
-                        Line<br>
-                        Line<br>
-                    </panel>
+                    <br>
+                    Hello
                 </div>
+                <i class="ion-chevron-down"></i>
             </div>
-            <div class="panel"><i class="ion-chevron-down"></i></div>
         </script>
         <script>
             var player = new MediaElementPlayer('sample', {
