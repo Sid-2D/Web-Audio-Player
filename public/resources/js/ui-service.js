@@ -21,12 +21,14 @@ let uiService = (() => {
         tabs[index].style.color = colors.dark
     }
     
-    function collapse(panel) {
+    function collapse(panel, chevron) {
         if (panel.style.maxHeight === "" || panel.style.maxHeight === "0px") {
-            panel.style.maxHeight = ele.scrollHeight + 'px'
+            panel.style.maxHeight = panel.scrollHeight + 'px'
+            chevron.className = 'ion-chevron-up'
             return
         }
         panel.style.maxHeight = 0 + 'px'
+        chevron.className = 'ion-chevron-down'
     }
 
     return {
@@ -69,6 +71,10 @@ let uiService = (() => {
                     }
                     reader.readAsDataURL(target.files[0])
                 }
+
+                // Make card droppable
+                document.querySelector(`#card-${cardNumber - 1} .panel i`)
+                        .onclick = collapse.bind(null, document.querySelector(`#card-${cardNumber - 1} .panel-content`), document.querySelector(`#card-${cardNumber - 1} .panel i`))                                
             })
             uploader.onclick = () => {
                 document.getElementById('upload-file').click()
